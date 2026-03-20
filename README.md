@@ -38,7 +38,7 @@ Clone or download this repository into your YOURLS plugins directory:
 
 ```bash
 cd /path/to/yourls/user/plugins
-git clone https://github.com/pedrazadixon/yourls-notes notes-plugin
+git clone https://github.com/pedrazadixon/yourls-notes yourls-notes
 ```
 
 Or download the ZIP and extract it so the directory structure looks like:
@@ -47,7 +47,7 @@ Or download the ZIP and extract it so the directory structure looks like:
 yourls/
 └── user/
     └── plugins/
-        └── notes-plugin/
+        └── yourls-notes/
             ├── assets/
             │   ├── note-page.css
             │   ├── notes.css
@@ -126,7 +126,7 @@ Navigate to **Manage Plugins → Notes Settings** to access the settings page. F
 ## 🏗️ Architecture
 
 ```
-notes-plugin/
+yourls-notes/
 ├── plugin.php            # Bootstrap: constants, module loading, activation & cleanup hooks
 ├── uninstall.php         # Deactivation guard (data preserved by design)
 ├── includes/
@@ -170,7 +170,7 @@ To remove all note data you have two options:
 ### Option B: Manual SQL
 
 1. **Deactivate** the plugin from the YOURLS admin panel.
-2. **Delete** the `notes-plugin` folder from `user/plugins/`.
+2. **Delete** the `yourls-notes` folder from `user/plugins/`.
 3. **Drop** the notes table manually:
 
 ```sql

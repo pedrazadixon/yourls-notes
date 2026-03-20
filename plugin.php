@@ -32,7 +32,7 @@ require_once NOTES_PLUGIN_DIR . '/includes/stats.php';
 require_once NOTES_PLUGIN_DIR . '/includes/settings.php';
 
 // ─── Activation: create the notes table ───
-yourls_add_action('activated_notes-plugin/plugin.php', 'notes_plugin_activate');
+yourls_add_action('activated_yourls-notes/plugin.php', 'notes_plugin_activate');
 function notes_plugin_activate()
 {
     global $ydb;

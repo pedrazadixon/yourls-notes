@@ -1,0 +1,122 @@
+/**
+ * Notes Plugin - Admin Styles
+ */
+
+/* ─── Toggle Button ─── */
+#notes-toggle-wrap {
+    margin-top: 10px;
+    text-align: left;
+}
+
+#notes-toggle-btn {
+    color: #595441;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 1px solid #88c0eb;
+    cursor: pointer;
+    padding-bottom: 3px;
+    border-radius: 3px;
+}
+
+/* ─── Form Container ─── */
+#notes-form-wrap {
+    margin-top: 12px;
+    padding: 16px 20px;
+    background: #fcfcfc;
+    transition: all 0.3s ease;
+}
+
+.notes-form-inner label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.notes-form-inner textarea {
+    width: 98%;
+    max-width: 98%;
+}
+
+/* ─── Form Row (keyword + button) ─── */
+.notes-form-row {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+
+/* ─── Markdown checkbox ─── */
+.notes-checkbox-label {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 0 !important;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.notes-form-row label {
+    display: inline !important;
+    margin-bottom: 0 !important;
+}
+
+.notes-form-row input[type="text"] {
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#note-submit {
+    color: #595441;
+    font-weight: bold;
+    background-color: #FFFFFF;
+    border: 1px solid #88c0eb;
+    cursor: pointer;
+    padding: 6px 16px;
+    border-radius: 3px;
+}
+
+#note-submit:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* ─── Feedback ─── */
+#note-feedback {
+    margin-top: 10px;
+}
+
+.note-feedback-success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.note-feedback-success a {
+    color: #155724;
+    font-weight: 600;
+}
+
+.note-feedback-success input[type="text"] {
+    margin-left: 8px;
+    padding: 4px 8px;
+    border: 1px solid #c3e6cb;
+    border-radius: 4px;
+    background: #fff;
+}
+
+.note-feedback-fail {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    padding: 10px 14px;
+    border-radius: 6px;
+}
+
+.notes-badge-note {
+    color: #bbc;
+}
